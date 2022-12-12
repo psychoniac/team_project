@@ -1,0 +1,16 @@
+.contener {
+    background: linear-gradient(rgb(85, 85, 142), rgb(213, 108, 108));
+    font-family: "Comic Neue";
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.card-exemple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

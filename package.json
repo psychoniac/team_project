@@ -1,0 +1,11 @@
+{
+  "name": "integrateur_student_project",
+  "version": "1.0.0",
+  "description": "Projet d'equipe avec mes collègues de formation oc",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./public/style.css"
+  },
+  "author": "Team_integrateur_oc",
+  "license": "ISC"
+}

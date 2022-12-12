@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contener {
+  background: linear-gradient(rgb(85, 85, 142), rgb(213, 108, 108));
+  font-family: "Comic Neue";
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-exemple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid red;
+  border-radius: 25px 25px 25px 25px;
+}
+.card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border: 1px darkblue solid;
+  border-radius: 25px 25px 0 0;
+}
+.card__image-png {
+  width: 100%;
+  object-fit: cover;
+}
+.card__title {
+  color: lightyellow;
+  font-size: 16px;
+  font-family: "Comic neue";
+  text-align: center;
+  background-color: darkred;
+  border-radius: 0 0 25px 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
