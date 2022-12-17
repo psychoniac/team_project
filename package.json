@@ -7,5 +7,7 @@
     "sass": "sass --watch ./sass/main.scss ./public/style.css"
   },
   "author": "Team_integrateur_oc",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+  }
 }
