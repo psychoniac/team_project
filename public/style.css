@@ -1,20 +1,74 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.contener {
-  background: linear-gradient(rgb(85, 85, 142), rgb(213, 108, 108));
-  font-family: "Comic Neue";
-  min-height: 300vh;
-  min-width: 375px;
-  font-size: 22px;
-  font-weight: 700;
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  list-style: none;
+  background-color: white;
+  border: 0;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+@font-face {
+  font-family: alaskan;
+  src: url(/public/font/alaskan-nights/AlaskanNights.ttf);
+}
+@font-face {
+  font-family: dafoe;
+  src: url(/public/font/mr-dafoe-maisfontes.0b65/mr-dafoe.ttf);
+}
+.header {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  align-items: center;
+  padding-top: 1em;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: dafoe;
+  text-align: center;
+}
+.header__title {
+  font-size: 55px;
+  background-color: #5ca5ee;
+  color: rgba(177, 105, 83, 0.467);
+  padding: 1em;
+  border: 1px solid rgb(123, 68, 123);
+  animation-name: translate;
+  animation: translate;
+  animation: translate 3000ms linear both;
+}
+.header__txt--1 {
+  font-size: 45px;
+  font-family: alaskan;
+  font-weight: 600;
+}
+.header__txt--2 {
+  font-size: 40px;
+  font-family: alaskan;
+  font-weight: 500;
+}
+
+.contener {
+  background: linear-gradient(rgb(85, 85, 142), rgb(213, 108, 108));
+  min-height: 300vh;
+  min-width: 375px;
+  font-family: alaskan;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .card-exemple {
@@ -49,8 +103,8 @@ body {
   width: 100%;
   height: 100%;
   color: lightyellow;
+  font-family: dafoe;
   font-size: 16px;
-  font-family: "Comic neue";
   text-align: center;
   background-color: darkred;
   border-radius: 0 0 25px 25px;
@@ -61,7 +115,28 @@ body {
 }
 .card:hover {
   transform: scale(1.2);
-  rotate: 180°;
+}
+
+.icone__heart {
+  width: 22px;
+  height: 22px;
+}
+.icone__heart--nocolor {
+  opacity: 1;
+  position: relative;
+}
+.icone__heart::after {
+  content: url(/public/img/svg/heart_gradient.svg);
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+
+.icone__heart:hover--nocolor {
+  opacity: 0;
+}
+.icone__heart:hover::after {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

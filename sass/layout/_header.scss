@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: $font-title;
+  text-align: center;
+  &__title {
+    font-size: 55px;
+    background-color: $color2;
+    color: $color1;
+    padding: 1em;
+    border: 1px solid $color3;
+    animation-name: translate;
+    animation: translate;
+    animation: translate 3000ms linear both;
+  }
+  &__txt--1 {
+    font-size: 45px;
+    font-family: $font-txt;
+    font-weight: 600;
+  }
+  &__txt--2 {
+    font-size: 40px;
+    font-family: $font-txt;
+    font-weight: 500;
+  }
+}

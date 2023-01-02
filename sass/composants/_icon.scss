@@ -1,0 +1,24 @@
+.icone__heart{
+    width: 22px;
+    height: 22px;
+    
+    &--nocolor{
+        opacity: 1;
+        position: relative;
+    }
+    &::after{
+            content: url(/public/img/svg/heart_gradient.svg);
+            opacity: 0;
+            position: absolute;
+            left: 0;
+                }
+            }
+.icone__heart:hover{
+    &--nocolor{
+        opacity: 0;
+    }
+    
+    &::after{
+        opacity: 1;
+    }
+}
